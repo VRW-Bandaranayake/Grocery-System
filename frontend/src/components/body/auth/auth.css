@@ -1,0 +1,197 @@
+.login_page{
+    max-width: 550px;
+    margin: 0px;
+    color: rgb(252, 240, 240);
+    padding: 4px 15px;
+}
+.login_page h2{
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin: 0px 350px;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+    text-shadow: #777;
+}
+
+.login_page label{
+    
+    font-size: 1.5rem;
+    margin: 0px 70px;
+    color: #FFFFFF;
+    text-shadow: #777;
+}
+
+.login_page input{
+    width: 100%;
+    height: 45px;
+    margin: 15px 60px;
+    border: 2px solid #777;
+    outline: none;
+    padding: 0 10px;
+}
+.login_page .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    align-items: flex-start;
+    margin: 15px 60px;
+}
+.login_page .row a{
+    color: crimson;
+}
+.login_page .row button{
+    width: 150px;
+    padding: 10px 0;
+    color: white;
+    background: rgb(4, 14, 75);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-right: 10px;
+}
+.login_page p{
+    margin: 10px 0;
+    margin: 15px 60px;
+}
+.login_page a{
+    color: rgb(24, 87, 223);
+    font-weight: 500;
+    
+}
+
+.bg_image{
+    background-image: url('https://res.cloudinary.com/ravidu/image/upload/v1648108435/grocery/360_F_217537096_y4l9qhTbLFvQGAbl64dQPEdir2x6MIDB_ulis69.jpg');
+    background-size: cover;
+    height: 100vh;
+    color: #0c0b0b;
+  }
+
+  a:link {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+
+  /* ------------- Forgot Password --------------- */
+
+  .fg_page{
+    max-width: 550px;
+    margin: 0px;
+    color: rgb(252, 240, 240);
+    padding: 4px 15px;
+}
+
+
+.fg_pass h2{
+    color: #555;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px 350px;
+    letter-spacing: 1.3px;
+    color: rgb(255, 253, 253);
+}
+.fg_pass .row{
+    max-width: 700px;
+    margin: auto;
+    padding: 50px 20px;
+    color: rgb(187, 180, 180);
+}
+.fg_pass .row input{
+    width: 75%;
+    height: 45px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 15px 0;
+}
+.fg_pass .row button{
+    background: rgb(38, 62, 126);
+    color: white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+
+.bg_image1{
+    background-image: url('https://res.cloudinary.com/ravidu/image/upload/v1648108435/grocery/360_F_217537096_y4l9qhTbLFvQGAbl64dQPEdir2x6MIDB_ulis69.jpg');
+    background-size: cover;
+    height: 86vh;
+ 
+    color: #0c0b0b;
+  }
+
+
+
+  /* ------------- Reset Password --------------- */
+  .rs_page{
+    max-width: 550px;
+    margin: 0px;
+    color: rgb(252, 240, 240);
+    padding: 4px 15px;
+}
+
+
+.rs_pass h2{
+    color: rgb(219, 19, 19);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px 350px;
+    letter-spacing: 1.3px;
+    color: rgb(255, 253, 253);
+}
+
+.rs_pass .row1{
+    max-width: 400px;
+    margin: auto;
+    padding: 50px 20px;
+    color: rgb(187, 180, 180);
+}
+.rs_pass .row1 input{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px 80px;
+    border-radius: 3px;
+    margin: 10px 18px;
+}
+.rs_pass .row1 button{
+    background: rgb(38, 62, 126);
+    color: white;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+
+.bg_image2{
+    background-image: url('https://res.cloudinary.com/ravidu/image/upload/v1648108435/grocery/360_F_217537096_y4l9qhTbLFvQGAbl64dQPEdir2x6MIDB_ulis69.jpg');
+    background-size: cover;
+    height: 100vh;
+ 
+    color: #0c0b0b;
+}
+
+/* ---------- Facebook / Google ---------------- */
+.login_page .hr{
+    margin: 20px 50px;
+    color: rgb(149, 147, 155);
+}
+
+.login_page .social button{
+    width: 50%;
+    margin: 10px 50px;
+    height: 50px;
+    font-size: 10px;
+    font-weight: 200;
+    text-transform: capitalize;
+    letter-spacing: 1.3px;
+    box-shadow: 0 2px 4px #777;
+    border-radius: 60px;
+}

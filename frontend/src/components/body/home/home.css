@@ -1,0 +1,46 @@
+  /* ------------- home page --------------- */
+
+.home_page{
+    min-height: calc(100vh - 100px);
+    padding: 20px;
+    
+    color: #333;
+}
+.home_page h2{
+    font-size: 3rem;
+    margin: 10px 500px;
+    color: teal;
+    animation: backwards;
+}
+.home_page p{
+    color: rgb(245, 240, 240);
+    padding: 100px;
+    line-height: 1.5;
+    margin: 10px 10px;
+    font-style: italic;
+    width: 1000px;
+    font-size: 25px;
+    animation: infinite;
+    
+}
+
+.home_page a{
+    color: white;
+    background: rgb(9, 2, 77);
+    padding: 15px 50px;
+    display: inline;
+    border-radius: 50px;
+    margin: 30px 75px;
+    letter-spacing: 1.2px;
+}
+.home_page h3{
+    color: chocolate;
+    margin-top: 30px;
+}
+
+.bg_image1{
+    background-image: url('https://res.cloudinary.com/ravidu/image/upload/v1648108435/grocery/360_F_217537096_y4l9qhTbLFvQGAbl64dQPEdir2x6MIDB_ulis69.jpg');
+    background-size: cover;
+    height: 100vh;
+    color: #0c0b0b;
+  }
