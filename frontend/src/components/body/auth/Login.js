@@ -106,7 +106,7 @@ function Login() {
         <div className="hr">Or Login With</div>
 
         <div className="social">
-                <GoogleLogin
+            <GoogleLogin
                     clientId="93185668833-unrdlk2bb11418iam300a28duajm9a38.apps.googleusercontent.com"
                     buttonText="Login with google"
                     onSuccess={responseGoogle}
