@@ -26,6 +26,7 @@ const userSchema = new mongoose.Schema({
         type: Number,
         default: 0 // 0 = user, 1 = admin
     },
+    
     avatar: {
         type: String,
         default: "https://res.cloudinary.com/delwfdyfw/image/upload/v1648106550/avatar/images_ge7xhy.png"

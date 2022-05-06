@@ -5,6 +5,11 @@ import {Link} from 'react-router-dom'
 import {isLength, isMatch} from '../../utils/validation/Validation'
 import {showSuccessMsg, showErrMsg} from '../../utils/notification/Notification'
 import {fetchAllUsers, dispatchGetAllUsers} from '../../../redux/actions/usersAction'
+import { PDFExport, savePDF } from '@progress/kendo-react-pdf'
+import  {useRef} from 'react'
+import { Button } from '@progress/kendo-react-buttons'
+
+
 
 const initialState = {
     name: '',
@@ -128,6 +133,16 @@ function Profile() {
         }
     }
 
+ const pdfExportComponent = useRef(null);
+ const handleExportWithComponent =(event) => {
+     pdfExportComponent.current.save();
+ };
+   
+
+const [SearchTerm, setsearchTerm] = useState("");
+
+
+
     return (
         <>
         <div>
@@ -182,10 +197,27 @@ function Profile() {
                 <button disabled={loading} onClick={handleUpdate}>Update</button>
             </div>
 
+          
+            
             <div className="col-right">
                 <h2>{isAdmin ? "Users" : "My Orders"}</h2>
 
+                <div className='button-area'>
+                    <button primary={true} onClick={handleExportWithComponent}
+                    style={{marginTop:30, marginBottom:10, width:"60%", height:"200%", color:"white", backgroundColor:"rgb(1, 28, 83)"}}>
+                        generate report</button>
+                    </div>
+                
                 <div style={{overflowX: "auto"}}>
+                    <input type="text" placeholder="Search.." 
+                    className="form-control" 
+                    style={{ marginBottom:20, width:"40%"}}
+                    onChange = {(e)=>{
+                        setsearchTerm(e.target.value);
+                    }}
+                    />
+                    <PDFExport ref={pdfExportComponent} paperSize = 'A1'>
+
                     <table className="customers">
                         <thead>
                             <tr>
@@ -198,7 +230,16 @@ function Profile() {
                         </thead>
                         <tbody>
                             {
-                                users.map(user => (
+                                users.filter((val)=>{
+                                    if (SearchTerm === ""){
+                                        return val;
+                                    }else if(
+                                        val.name.toLowerCase().includes(SearchTerm.toLowerCase()) ||
+                                        val.email.toLowerCase().includes(SearchTerm.toLowerCase())
+                                    ){
+                                        return val;
+                                    }
+                                }).map(user => (
                                     <tr key={user._id}>
                                         <td>{user._id}</td>
                                         <td>{user.name}</td>
@@ -222,11 +263,15 @@ function Profile() {
                             }
                         </tbody>
                     </table>
+                    </PDFExport>
                 </div>
+                
             </div>
+            
         </div>
         </>
     )
 }
+
 
 export default Profile
